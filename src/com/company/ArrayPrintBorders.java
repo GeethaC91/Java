@@ -23,6 +23,5 @@ public class ArrayPrintBorders {
             System.out.println(" ");
         }
     }
-}git config --global user.name "Your Name"
-        git config --global user.email "youremail@yourdomain.com"
+}
 
