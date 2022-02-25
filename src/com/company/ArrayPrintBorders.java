@@ -20,6 +20,9 @@ public class ArrayPrintBorders {
                     System.out.print("\t");
                 }
             }
+
+
+
             System.out.println(" ");
         }
     }

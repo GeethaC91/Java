@@ -9,6 +9,9 @@ public class ArrayColAvg {
                 {10, 11, 12},
                 {1, 6, 9}
         };
+
+
+
         for (int j = 0; j < arr[j].length; j++) {
             int sum = 0,avg=0;
             for (int i = 0; i < arr.length; i++) {
