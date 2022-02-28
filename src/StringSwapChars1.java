@@ -16,6 +16,7 @@ public class StringSwapChars1 {
         System.out.println("Before Swapping"+" "+s);
         String result="";
         result=result+s.substring(0,i)+s.charAt(j)+s.substring(i+1,j)+s.charAt(i)+s.substring(j+1,s.length());
+        System.out.println(result.length());
         System.out.println("After Swapping"+" "+result);
     }
 }
