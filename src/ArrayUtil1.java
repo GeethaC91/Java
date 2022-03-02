@@ -5,6 +5,7 @@ public class ArrayUtil1 {
         int[] a={1,2,3,4,5};
         int b=3;
         System.out.println("The given int array is"+" "+Arrays.toString(a));
+        //System.out.println("The value is"+ " "+s);
         int index=indexOf(a,b);
         System.out.println("The index of"+" "+b+" "+"is"+" "+index);
         int int1=intAt(a,b);
@@ -27,11 +28,11 @@ public class ArrayUtil1 {
     }
     public static int intAt(int[] a,int b)
     {
-        if(b<a.length && b>=0)
+        //if(b<a.length && b>=0)
         return a[b];
-        else
+        //else
            // System.out.println("Please recheck");
-        return -1;
+        //return -1;
     }
     public static int length(int[] a)
     {
