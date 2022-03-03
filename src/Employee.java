@@ -4,16 +4,16 @@ public class Employee {
     String name;
     int emp_id;
     String dept;
-    Date hiredate;
+    //Date hiredate;
+    String hiredate;
     double hourlyrate;
-    public void getEmpDetails()
+    public String getEmpDetails()
     {
-        StringBuffer sb=new StringBuffer();
-        sb.append("Employee Name="+name
+        String s1 = ("Employee Name="+name
                 +"\t"+"Employee id="+emp_id
                 +"\t"+"Department="+dept
                 +"\t"+"Hire Date="+hiredate
                 +"\t"+"Hourly Rate="+hourlyrate);
-        System.out.println(sb);
+        return s1;
     }
 }

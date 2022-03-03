@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RevArray {
     public static void main(String[] args) {
         String s="ASSIGNMENT";

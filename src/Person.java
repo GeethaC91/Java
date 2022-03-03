@@ -5,14 +5,14 @@
     int age;
     public String getFullName()
     {
-        return firstname+lastname;
+        return firstname+" "+lastname;
     }
-    public Person()
+    public Person(String fname,String lname,String address,int age)
     {
-        this.firstname="Geetha";
-        this.lastname="Bhupathi";
-        this.address="Canada";
-        this.age=16;
+       firstname=fname;
+       lastname=lname;
+       this.address=address;
+       this.age=age;
     }
     public void changeAddress(String address)
     {
