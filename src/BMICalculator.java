@@ -12,6 +12,6 @@ public class BMICalculator {
         System.out.println("Your height in m:"+" "+height);
         System.out.println("Your BMI is"+" "+bmi);
         System.out.println("Main Branch");
-
+        System.out.println("Test Git");
     }
 }

@@ -15,9 +15,7 @@ public class PrintTable
         int j=10;
         for(int i=1;i<=j;i++)
         {
-            int num2;
-            num2=num*i;
-            System.out.println(num+"*"+i+"="+num2);
+            System.out.println(num+"*"+i+"="+(num*i));
         }
     }
 }
