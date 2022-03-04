@@ -11,5 +11,6 @@ public class BMICalculator {
         System.out.println("Your weight in kg:"+" "+weight);
         System.out.println("Your height in m:"+" "+height);
         System.out.println("Your BMI is"+" "+bmi);
+        System.out.println("Test Git");
     }
 }
