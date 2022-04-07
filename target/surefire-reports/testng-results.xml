@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="26" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="26" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+      <class name="CalculatorTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:CalculatorTest@185d8b6]" name="setUp" is-config="true" duration-ms="8" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="MultiplyTest()[pri:0, instance:CalculatorTest@185d8b6]" name="MultiplyTest" duration-ms="2" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultiplyTest -->
+        <test-method status="PASS" signature="sumTest()[pri:0, instance:CalculatorTest@185d8b6]" name="sumTest" duration-ms="0" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumTest -->
+        <test-method status="PASS" signature="tearDownOnSuite()[pri:0, instance:CalculatorTest@185d8b6]" name="tearDownOnSuite" is-config="true" duration-ms="0" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnSuite -->
+      </class> <!-- CalculatorTest -->
+      <class name="DummyTest">
+        <test-method status="PASS" signature="dummyTestcase()[pri:0, instance:DummyTest@1536d79]" name="dummyTestcase" duration-ms="0" started-at="2022-04-02T14:45:08 EDT" finished-at="2022-04-02T14:45:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyTestcase -->
+      </class> <!-- DummyTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
