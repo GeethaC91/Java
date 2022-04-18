@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dummy Suite">
+    <parameter name="url" value="https://pragra.io"></parameter>
+    <parameter name="b" value="2"></parameter>
+    <parameter name="c" value="2"></parameter>
+    <listeners>
+        <listener class-name="ScreenshotListener"></listener>
+    </listeners>
+    <test name="frontend">
+       <!-- <groups>
+            <define name="sanity"></define>
+            <define name="regression"></define>
+           <run>
+                <include name="sanity"></include>
+                <include name="regression"></include>
+            </run>
+        </groups>-->
+        <classes>
+            <class name="CalculatorTest">
+            </class>
+        </classes>
+    </test>
+</suite>

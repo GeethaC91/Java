@@ -1,55 +1,70 @@
+import javafx.scene.layout.Priority;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class DummyTest {
-
+    static int i =1;
     @BeforeSuite
-    public void beforeSuite()
-    {
+    @Parameters({"url"})
+    public void setUpOnSuite(String url) {
         System.out.println("Before Suite");
+        System.out.println(url);
     }
+
     @BeforeTest
-    public void beforeTest()
-    {
+    @Parameters({"url"})
+    public void beforeTest(String url1) {
         System.out.println("Before Test");
+        System.out.println(url1);
     }
+
     @BeforeClass
-    public void beforeClass()
-    {
+    @Parameters({"url"})
+    public void beforeClass(String url2) {
         System.out.println("Before Class");
+        System.out.println(url2);
     }
+
     @BeforeMethod
-    public void beforeMethod()
-    {
+    public void beforeMethod() {
         System.out.println("Before Method");
     }
-    @Test
-    public void testCase1()
-    {
+
+    @Test(enabled=true,groups={"sanity"})
+    @Parameters({"url"})
+    public void testCase1(String url) {
         System.out.println("Testcase1");
+        System.out.println(url);
     }
-    @Test
-    public void testCase2()
-    {
+
+    @Test(groups={"regression"},dependsOnGroups = "sanity")
+    public void testCase2() {
         System.out.println("Testcase2");
+        //int i = 9/0;
     }
+
+    @Test(dependsOnMethods = {"testCase2"},enabled=true,groups={"regression"})
+    public void testCase3() {
+        System.out.println("Testcase3");
+    }
+
     @AfterSuite
-    public void afterSuite()
-    {
+    public void afterSuite() {
         System.out.println("After Suite");
     }
+
     @AfterTest
-    public void afterTest()
-    {
+    public void afterTest() {
         System.out.println("After Test");
     }
+
     @AfterClass
-    public void afterClass()
-    {
+    public void afterClass() {
         System.out.println("after Class");
     }
+
     @AfterMethod
-    public void afterMethod()
-    {
+    public void afterMethod() {
         System.out.println("after Method");
     }
 }
